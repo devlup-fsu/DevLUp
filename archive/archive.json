@@ -1,62 +1,8 @@
 [
   {
-    "year": "2025-2026",
-    "current": true,
+    "year": "Spring 2026",
+    "current": false,
     "entries": [
-      {
-        "title": "GBM #1: Hello A New Hope",
-        "description": "Introduction to the club, board members, and plans for the semester.",
-        "date": "September 4th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_1.pdf"
-      },
-      {
-        "title": "Week 2: Intro to Unity",
-        "description": "What is Unity? Setting up the environment and creating a simple project.",
-        "date": "September 11th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_2_Intro_to_Unity.pdf"
-      },
-      {
-        "title": "Week 3: Art on a Budget",
-        "description": "Showing how to find free and affordable assets for your game projects.",
-        "date": "September 18th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_3_Free_Assets.pdf"
-      },
-      {
-        "title": "Week 5: PlayStation Recruiter Session",
-        "description": "PlayStation recruiter shares insights on their summer internship program and application tips.",
-        "date": "October 2nd, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_5_Playstation.pdf"
-      },
-      {
-        "title": "Week 7: THE ONE HOUR GAME JAM",
-        "description": "Creating an idea for a game in one hour.",
-        "date": "October 16th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_7_THE_ONE_HOUR_GAME_JAM.pdf"
-      },
-      {
-        "title": "DevilUp Horror Jam",
-        "description": "Weekend (48 hour) game jam focused on horror-themed games.",
-        "date": "October 17th–19th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_DevilUp_Horror_Jam_Kickoff.pdf"
-      },
-      {
-        "title": "Week 8: Mechanics vs Narrative",
-        "description": "Defining game mechanics and narrative, and how they interact to create engaging gameplay experiences.",
-        "date": "October 23rd, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_8_Mechanics_vs_Narrative.pdf"
-      },
-      {
-        "title": "Week 9: Intro to Blender",
-        "description": "Basic introduction to Blender for 3D modeling.",
-        "date": "October 30th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_9_Intro_to_Blender.pdf"
-      },
-      {
-        "title": "Week 10: The Flowchart",
-        "description": "Linear narrative design using flowcharts.",
-        "date": "November 6th, 2025",
-        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_10_The_Flowchart.pdf"
-      },
       {
         "title": "GBM Planner: Spring 2026",
         "description": "A planner showing when the meetings are and what each one will cover.",
@@ -106,7 +52,7 @@
         "file": "../assets/gbm_materials/2025-2026/Spring26GBM7-Lighting.pdf"
       },
       {
-        "title": "GBM #8: Level Design Sprint",
+        "title": "GBM #9: Level Design Sprint",
         "description": "Hands-on level design sprint workshop.",
         "date": "March 12th, 2026",
         "file": "../assets/gbm_materials/2025-2026/Spring26GBM8-LevelDesignSprint.pdf"
@@ -114,7 +60,145 @@
     ]
   },
   {
-    "year": "2024-2025",
+    "year": "Fall 2025",
+    "current": false,
+    "entries": [
+      {
+        "title": "GBM #1: Hello A New Hope",
+        "description": "Introduction to the club, board members, and plans for the semester.",
+        "date": "September 4th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_1.pdf"
+      },
+      {
+        "title": "GBM #2: Intro to Unity",
+        "description": "What is Unity? Setting up the environment and creating a simple project.",
+        "date": "September 11th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_2_Intro_to_Unity.pdf"
+      },
+      {
+        "title": "GBM #3: Art on a Budget",
+        "description": "Showing how to find free and affordable assets for your game projects.",
+        "date": "September 18th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_3_Free_Assets.pdf"
+      },
+      {
+        "title": "GBM #5: PlayStation Recruiter Session",
+        "description": "PlayStation recruiter shares insights on their summer internship program and application tips.",
+        "date": "October 2nd, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_5_Playstation.pdf"
+      },
+      {
+        "title": "GBM #7: THE ONE HOUR GAME JAM",
+        "description": "Creating an idea for a game in one hour.",
+        "date": "October 16th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_7_THE_ONE_HOUR_GAME_JAM.pdf"
+      },
+      {
+        "title": "DevilUp Horror Jam",
+        "description": "Weekend (48 hour) game jam focused on horror-themed games.",
+        "date": "October 17th–19th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_DevilUp_Horror_Jam_Kickoff.pdf"
+      },
+      {
+        "title": "GBM #8: Mechanics vs Narrative",
+        "description": "Defining game mechanics and narrative, and how they interact to create engaging gameplay experiences.",
+        "date": "October 23rd, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_8_Mechanics_vs_Narrative.pdf"
+      },
+      {
+        "title": "GBM #9: Intro to Blender",
+        "description": "Basic introduction to Blender for 3D modeling.",
+        "date": "October 30th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_9_Intro_to_Blender.pdf"
+      },
+      {
+        "title": "GBM #10: The Flowchart",
+        "description": "Linear narrative design using flowcharts.",
+        "date": "November 6th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_10_The_Flowchart.pdf"
+      },
+      {
+        "title": "GBM #13: Putting It All Together",
+        "description": "Review of the semester.",
+        "date": "December 4th, 2025",
+        "file": "../assets/gbm_materials/2025-2026/Fall25_GBM_13_putting_it_all_together.pdf"
+      }
+    ]
+  },
+  {
+    "year": "Spring 2025",
+    "current": false,
+    "entries": [
+      {
+        "title": "GBM Planner: Spring 2025",
+        "description": "A planner showing when the meetings are and what each one will cover.",
+        "date": "Spring 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_Planner.pdf"
+      },
+      {
+        "title": "GBM #1: Hello_III",
+        "description": "Introduction to the club, board members, and plans for the semester.",
+        "date": "January 16th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_1-Hello_III.pdf"
+      },
+      {
+        "title": "GBM #2: Intro to Godot",
+        "description": "Introduction to how to use Godot.",
+        "date": "January 30th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring_25_GBM_2_Intro_to_Godot.pdf"
+      },
+      {
+        "title": "GBM #3: Intro to Game Design",
+        "description": "Introduction to how to design game concepts.",
+        "date": "February 6th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_3-game_design.pdf"
+      },
+      {
+        "title": "GBM #4: Intro to Accessibility in Gaming",
+        "description": "Introduction to how to make games more accessible to all players.",
+        "date": "February 13th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_4-Accessibility_in_Gaming.pdf"
+      },
+      {
+        "title": "GBM #5: Intro to Art Basics",
+        "description": "Introduction to some basic art concepts and how to utilize them.",
+        "date": "February 20th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_5-Art_Basics.pdf"
+      },
+      {
+        "title": "GBM #6: Tips and Tricks for Godot",
+        "description": "Some tips to utilize when using Godot.",
+        "date": "March 6th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_6-Godot_Tidbits.pdf"
+      },
+      {
+        "title": "GBM #7: Intro to Stencyl",
+        "description": "Introduction to how to use Stencyl.",
+        "date": "March 20th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_7-Intro_to_Stencyl.pdf"
+      },
+      {
+        "title": "GBM #8: One Hour Game Jam",
+        "description": "Our Spring semester one hour game jam event.",
+        "date": "March 27th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_8-THE_ONE_HOUR_GAME_JAM.pdf"
+      },
+      {
+        "title": "Game Jam Essentials",
+        "description": "Going over the essentials of game jams.",
+        "date": "April 3rd, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_9-Game_Jam_Essentials.pdf"
+      },
+      {
+        "title": "GBM #10: Intro to Unity",
+        "description": "Showing how to use Unity for game production.",
+        "date": "April 10th, 2025",
+        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_10.pdf"
+      }
+    ]
+  },
+  {
+    "year": "Fall 2024",
     "current": false,
     "entries": [
       {
@@ -194,72 +278,6 @@
         "description": "End of Fall 2024 semester meeting.",
         "date": "December 5th, 2024",
         "file": "../assets/gbm_materials/2024-2025/Fall24GBM_12.pdf"
-      },
-      {
-        "title": "GBM Planner: Spring 2025",
-        "description": "A planner showing when the meetings are and what each one will cover.",
-        "date": "Spring 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_Planner.pdf"
-      },
-      {
-        "title": "GBM #1: Hello_III",
-        "description": "Introduction to the club, board members, and plans for the semester.",
-        "date": "January 16th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_1-Hello_III.pdf"
-      },
-      {
-        "title": "GBM #2: Intro to Godot",
-        "description": "Introduction to how to use Godot.",
-        "date": "January 30th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring_25_GBM_2_Intro_to_Godot.pdf"
-      },
-      {
-        "title": "GBM #3: Intro to Game Design",
-        "description": "Introduction to how to design game concepts.",
-        "date": "February 6th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_3-game_design.pdf"
-      },
-      {
-        "title": "GBM #4: Intro to Accessibility in Gaming",
-        "description": "Introduction to how to make games more accessible to all players.",
-        "date": "February 13th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_4-Accessibility_in_Gaming.pdf"
-      },
-      {
-        "title": "GBM #5: Intro to Art Basics",
-        "description": "Introduction to some basic art concepts and how to utilize them.",
-        "date": "February 20th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_5-Art_Basics.pdf"
-      },
-      {
-        "title": "GBM #6: Tips and Tricks for Godot",
-        "description": "Some tips to utilize when using Godot.",
-        "date": "March 6th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_6-Godot_Tidbits.pdf"
-      },
-      {
-        "title": "GBM #7: Intro to Stencyl",
-        "description": "Introduction to how to use Stencyl.",
-        "date": "March 20th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_7-Intro_to_Stencyl.pdf"
-      },
-      {
-        "title": "GBM #8: One Hour Game Jam",
-        "description": "Our Spring semester one hour game jam event.",
-        "date": "March 27th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_8-THE_ONE_HOUR_GAME_JAM.pdf"
-      },
-      {
-        "title": "Game Jam Essentials",
-        "description": "Going over the essentials of game jams.",
-        "date": "April 3rd, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_9-Game_Jam_Essentials.pdf"
-      },
-      {
-        "title": "GBM #10: Intro to Unity",
-        "description": "Showing how to use Unity for game production.",
-        "date": "April 10th, 2025",
-        "file": "../assets/gbm_materials/2024-2025/Spring25_GBM_10.pdf"
       }
     ]
   }
