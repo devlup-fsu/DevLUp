@@ -212,10 +212,10 @@
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,6 +275,14 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.author {
+  flex-grow: 1;
+}
+
+.proj-author-label {
+  max-width: 75%;
 }
 
 .view-btn {
