@@ -1,5 +1,5 @@
 """
-Super Simple Static Site Generator v1.0
+Super Simple Static Site Generator v1.1
 
 by Miles Burkart
 """
@@ -7,6 +7,7 @@ by Miles Burkart
 import os
 import sys
 import re
+from re import Match
 from pathlib import Path
 
 LAYOUT_DIR = '_layout'
@@ -15,6 +16,13 @@ TEMPLATE_DIR = '_templates'
 HTML_EXTENSION = '.html'
 
 TEMPLATE_PATTERN = re.compile(r"\{\{(.*?)\}\}", re.DOTALL)
+
+
+def get_match_pos(m: Match) -> tuple[int, int]:
+    start = m.start()
+    line = m.string.count('\n', 0, start) + 1
+    col = start - m.string.rfind('\n', 0, start)
+    return line, col
 
 
 def template(template_path: str, use_template_dir=True, **kwargs) -> str:
@@ -29,7 +37,7 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
             template_path += HTML_EXTENSION
     
     if not os.path.isfile(template_path):
-        raise FileNotFoundError(f'Could not find template at {template_path}')
+        raise FileNotFoundError(f'Could not find template at "{template_path}"')
 
     with open(template_path, 'r') as f:
         template_content = f.read()
@@ -40,7 +48,16 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
 
     for m in re.finditer(TEMPLATE_PATTERN, template_content):
         expression = m.group(1).strip()
-        evaluated_expression = str(eval(expression, kwargs))
+        try:
+            evaluated_expression = str(eval(expression, kwargs))
+        except Exception as e:
+            # Generate a trace so the user knows where the error is
+            message = str(e)
+            if '\n' not in message:
+                message += '\n  Trace:'
+            line, col = get_match_pos(m)
+            raise e.__class__(f'{message}\n    {template_path}, line {line} col {col}')
+
         match_start, match_end = m.span()
 
         evaluated_parts.append(template_content[last_match_end:match_start])
@@ -67,7 +84,7 @@ def main():
 
             try:
                 file_content = template(str(file_path), use_template_dir=False, template=template)
-            except FileNotFoundError as e:
+            except Exception as e:
                 print('Error:', e, file=sys.stderr)
                 return 2
 
