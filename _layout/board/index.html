@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board - DevLUp FSU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../favicon.ico">
+
+</head>
+<body>
+
+<div class="page">
+  {{ template('navbar', page='board') }}
+
+  <div class="board-hero">
+    <div class="board-hero-content">
+      <h1>Club Leadership</h1>
+      <p>Celebrating the members who have dedicated their time to lead DevLUp.</p>
+    </div>
+  </div>
+
+  <div class="board-main">
+    <div class="board-search">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="Search board members..." aria-label="Search board members">
+    </div>
+
+    <div class="board-advisor" id="advisor-section"></div>
+    <div id="years-container"></div>
+  </div>
+
+  {{ template('footer') }}
+</div>
+
+<script>
+  async function loadBoard() {
+    const res = await fetch('board.json');
+    const data = await res.json();
+
+    renderAdvisor(data.advisor);
+    renderYears(data.years, '');
+
+    document.getElementById('search-input').addEventListener('input', function () {
+      renderYears(data.years, this.value.toLowerCase());
+    });
+  }
+
+  function renderAdvisor(advisor) {
+    document.getElementById('advisor-section').innerHTML = `
+      <div class="board-advisor-title">Club Advisor</div>
+      <div class="board-advisor-card">
+        ${memberCard(advisor)}
+      </div>
+    `;
+  }
+
+  function renderYears(years, query) {
+    const container = document.getElementById('years-container');
+    let html = '';
+    let anyVisible = false;
+
+    for (const year of years) {
+      const members = query
+        ? year.members.filter(m =>
+            m.name.toLowerCase().includes(query) ||
+            m.role.toLowerCase().includes(query)
+          )
+        : year.members;
+
+      if (members.length === 0) continue;
+      anyVisible = true;
+
+      html += `
+        <section class="board-year">
+          <div class="board-year-header">
+            <h2>${escHtml(year.year)}</h2>
+            ${year.current ? '<span class="board-current-badge">Current Board</span>' : ''}
+          </div>
+          <div class="board-grid">
+            ${members.map(memberCard).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    if (!anyVisible) {
+      html = '<p class="board-empty">No board members found.</p>';
+    }
+
+    container.innerHTML = html;
+  }
+
+  function memberCard(member) {
+    const img = `<img src="${escHtml(member.image)}" alt="${escHtml(member.name)}" loading="lazy">`;
+    const photo = member.url
+      ? `<a href="${escHtml(member.url)}" target="_blank" rel="noopener noreferrer">${img}</a>`
+      : img;
+    return `
+      <div class="board-card">
+        <div class="board-card-photo">${photo}</div>
+        <div class="board-card-role">${escHtml(member.role)}</div>
+        <div class="board-card-name">${escHtml(member.name)}</div>
+      </div>
+    `;
+  }
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  loadBoard();
+
+  document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

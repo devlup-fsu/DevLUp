@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - DevLUp FSU</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+
+<div class="page">
+  {{ template('navbar', page='projects') }}
+
+  <div class="projects-hero">
+    <div class="projects-hero-content">
+       <h1>Member Projects</h1>
+      <p>Projects created by our members.</p>
+    </div>
+  </div>
+
+  <div class="projects-main">
+    <div class="projects-search">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="Search projects..." aria-label="Search projects">
+    </div>
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+
+  {{ template('footer') }}
+</div>
+
+<script>
+  async function loadProjects() {
+    const res = await fetch('projects.json');
+    const projects = await res.json();
+    renderProjects(projects);
+
+    document.getElementById('search-input').addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      const filtered = projects.filter(p =>
+        p.title.toLowerCase().includes(query) ||
+        p.description.toLowerCase().includes(query) ||
+        p.tags.some(t => t.toLowerCase().includes(query))
+      );
+      renderProjects(filtered);
+    });
+  }
+
+  function renderProjects(projects) {
+    const grid = document.getElementById('projects-grid');
+    if (projects.length === 0) {
+      grid.innerHTML = '<p class="projects-empty">No projects found.</p>';
+      return;
+    }
+    grid.innerHTML = projects.map(p => `
+      <div class="project-card">
+        <img src="${escHtml(p.image)}" alt="Cover art for ${escHtml(p.title)}" loading="lazy">
+        <div class="project-card-body">
+          ${p.tags.length ? `<div class="project-tags">${p.tags.map(t => `<span class="project-tag">${escHtml(t)}</span>`).join('')}</div>` : ''}
+          <h3>${escHtml(p.title)}</h3>
+          <p>${escHtml(p.description)}</p>
+          <div class="project-links">
+            <a href="${escHtml(p.playUrl)}" target="_blank" rel="noopener noreferrer" class="project-link-play">Play Now </a>
+            ${p.repoUrl ? `<a href="${escHtml(p.repoUrl)}" target="_blank" rel="noopener noreferrer" class="project-link-repo">GitHub</a>` : ''}
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  loadProjects();
+
+  document.querySelector('.navbar-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('open');
+  });
+</script>
+
+
+</body>
+</html>
