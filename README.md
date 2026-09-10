@@ -11,12 +11,23 @@ Thanks!
 ## Table of Contents
 - [DevLUp FSU Website](#devlup-fsu-website)
   - [Table of Contents](#table-of-contents)
+  - [Editing Projects, Archive, or Board](#editing-projects-archive-or-board)
   - [Editing Page Content](#editing-page-content)
     - [`_layout`](#_layout)
     - [`_templates`](#_templates)
   - [Using Template Expressions](#using-template-expressions)
   - [Generating the Site](#generating-the-site)
   - [Assets](#assets)
+
+
+## Editing Projects, Archive, or Board
+
+If you want to add, edit, or remove items from any of these places, you can simply modify the
+corresponding JSON file:
+
+- Projects: `/projects/projects.json`
+- Archive: `/archive/archive.json`
+- Board: `/board/board.json`
 
 
 ## Editing Page Content
@@ -29,6 +40,8 @@ If you want to edit a page, **always** go to the `_layout` or `_templates` direc
 
 `_layout` contains all the pages in the site.
 Its contents will be essentially copied and pasted over the root directory, overwriting `.html` files as necessary.
+
+This directory should only contain `.html` files and subdirectories.
 
 ### `_templates`
 

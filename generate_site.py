@@ -54,7 +54,7 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
 
 def main():
     if not os.path.isdir(LAYOUT_DIR):
-        print(f'Could not find layout at {LAYOUT_DIR}', file=sys.stderr)
+        print(f'Error: Could not find layout directory at {LAYOUT_DIR}', file=sys.stderr)
         return 1
 
     for root, dirs, files in os.walk(LAYOUT_DIR):
@@ -68,7 +68,7 @@ def main():
             try:
                 file_content = template(str(file_path), use_template_dir=False, template=template)
             except FileNotFoundError as e:
-                print(e, file=sys.stderr)
+                print('Error:', e, file=sys.stderr)
                 return 2
 
             write_file_path = Path(*file_path.parts[1:])  # Remove layout directory from start of path
