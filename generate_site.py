@@ -1,5 +1,5 @@
 """
-Super Simple Static Site Generator v1.1
+Super Simple Static Site Generator v1.2
 
 by Miles Burkart
 """
@@ -9,6 +9,7 @@ import sys
 import re
 from re import Match
 from pathlib import Path
+import time
 
 LAYOUT_DIR = '_layout'
 TEMPLATE_DIR = '_templates'
@@ -16,6 +17,10 @@ TEMPLATE_DIR = '_templates'
 HTML_EXTENSION = '.html'
 
 TEMPLATE_PATTERN = re.compile(r"\{\{(.*?)\}\}", re.DOTALL)
+
+COLOR_ERR = '\x1b[31m'
+COLOR_OK = '\x1b[32m'
+COLOR_RESET = '\x1b[0m'
 
 
 def get_match_pos(m: Match) -> tuple[int, int]:
@@ -71,8 +76,11 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
 
 def main():
     if not os.path.isdir(LAYOUT_DIR):
-        print(f'Error: Could not find layout directory at {LAYOUT_DIR}', file=sys.stderr)
+        print(f'{COLOR_ERR}Error: Could not find layout directory at {LAYOUT_DIR}{COLOR_RESET}', file=sys.stderr)
         return 1
+
+    generated_file_count = 0
+    start_time = time.time()
 
     for root, dirs, files in os.walk(LAYOUT_DIR):
         for file in files:
@@ -85,16 +93,18 @@ def main():
             try:
                 file_content = template(str(file_path), use_template_dir=False, template=template)
             except Exception as e:
-                print('Error:', e, file=sys.stderr)
+                print(f'{COLOR_ERR}Error: {e}{COLOR_RESET}', file=sys.stderr)
                 return 2
 
             write_file_path = Path(*file_path.parts[1:])  # Remove layout directory from start of path
             with open(write_file_path, 'w') as f:
                 f.write(file_content)
+                generated_file_count += 1
 
             print(f'Wrote page to', write_file_path)
 
-    print('Done!')
+    elapsed_time_ms = (time.time() - start_time) * 1000
+    print(f'{COLOR_OK}Done! Generated {generated_file_count} files in {elapsed_time_ms:.2f}ms')
     
     return 0
 
