@@ -1,5 +1,5 @@
 """
-Super Simple Static Site Generator v1.2
+Super Simple Static Site Generator v1.3
 
 by Miles Burkart
 """
@@ -10,6 +10,7 @@ import re
 from re import Match
 from pathlib import Path
 import time
+import json
 
 LAYOUT_DIR = '_layout'
 TEMPLATE_DIR = '_templates'
@@ -24,6 +25,9 @@ COLOR_RESET = '\x1b[0m'
 
 
 def get_match_pos(m: Match) -> tuple[int, int]:
+    """
+    Returns the line and column number where a match was found.
+    """
     start = m.start()
     line = m.string.count('\n', 0, start) + 1
     col = start - m.string.rfind('\n', 0, start)
@@ -74,10 +78,21 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
     return ''.join(evaluated_parts)
 
 
+def readjson(file_path: str):
+    with open(file_path, 'r') as f:
+        return json.load(f)
+
+
 def main():
     if not os.path.isdir(LAYOUT_DIR):
         print(f'{COLOR_ERR}Error: Could not find layout directory at {LAYOUT_DIR}{COLOR_RESET}', file=sys.stderr)
         return 1
+
+    template_kwargs = {
+        'template': template,
+        'listdir': os.listdir,
+        'json': readjson
+    }
 
     generated_file_count = 0
     start_time = time.time()
@@ -91,12 +106,13 @@ def main():
             file_path = Path(root) / file
 
             try:
-                file_content = template(str(file_path), use_template_dir=False, template=template)
+                file_content = template(str(file_path), use_template_dir=False, **template_kwargs)
             except Exception as e:
                 print(f'{COLOR_ERR}Error: {e}{COLOR_RESET}', file=sys.stderr)
                 return 2
 
             write_file_path = Path(*file_path.parts[1:])  # Remove layout directory from start of path
+            write_file_path.parent.mkdir(parents=True, exist_ok=True)
             with open(write_file_path, 'w') as f:
                 f.write(file_content)
                 generated_file_count += 1
