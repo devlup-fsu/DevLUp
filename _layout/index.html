@@ -56,39 +56,8 @@
 
     <div class="sidebar">
       <div class="section-title" style="margin-bottom: 10px;">Next meeting</div>
-      <div class="meeting-card">
-        <div class="meeting-header">
-          <h3>Intro to Unity</h3>
-          <h4>Presenter: Yusong Liang</h4>
-          <p>All skill levels welcome</p>
-        </div>
-        <div class="meeting-body">
-          <div class="meeting-row">
-            <div class="meeting-icon">📅</div>
-            <div>
-              <div class="meeting-label">Date</div>
-              <div class="meeting-value">Thursday, September 17</div>
-              <div class="meeting-sub">Repeats every week</div>
-            </div>
-          </div>
-          <div class="meeting-row">
-            <div class="meeting-icon">🕖</div>
-            <div>
-              <div class="meeting-label">Time</div>
-              <div class="meeting-value">4:30 PM - 6:00 PM</div>
-              <div class="meeting-sub">Eastern Time (ET)</div>
-            </div>
-          </div>
-          <div class="meeting-row">
-            <div class="meeting-icon">📍</div>
-            <div>
-              <div class="meeting-label">Location</div>
-              <div class="meeting-value">Innovation Hub Collab</div>
-              <div class="meeting-sub">Shores Building, Tallahassee Campus</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      {{ template('meeting_card', **json('next_meeting.json')) }}
 
       <div class="links-card">
         <div class="links-header"><h3>Quick links</h3></div>
