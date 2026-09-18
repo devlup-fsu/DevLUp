@@ -378,26 +378,6 @@
   margin-top: 1px;
 }
 
-.rsvp-btn {
-  width: 100%;
-  background: var(--garnet);
-  color: #fff;
-  border: none;
-  padding: 9px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  font-family: var(--font-sans);
-  margin-top: 12px;
-  border-top: 1px solid var(--color-border-tertiary);
-  padding-top: 13px;
-}
-
-.rsvp-btn:hover {
-  background: var(--garnet-dark);
-}
-
 .links-card {
   background: var(--bg);
   border: 0.5px solid var(--border);
