@@ -1,5 +1,17 @@
 [
   {
+    "year": "Fall 2026",
+    "current": true,
+    "entries": [
+      {
+        "title": "GBM #1: Reign of Hailie",
+        "description": "Introduction to the club, board members, and plans for the semester.",
+        "date": "September 17th, 2026",
+        "file": "../assets/gbm_materials/2026-2027/Fall26_GBM_1.pdf"
+      }
+    ]
+  },
+  {
     "year": "Spring 2026",
     "current": false,
     "entries": [
