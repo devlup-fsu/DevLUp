@@ -1,7 +1,7 @@
 <div class="meeting-card">
   <div class="meeting-header">
     <h3>{{title}}</h3>
-    <h4>Presenter: {{', '.join(presenters)}}</h4>
+    <h4>Presenter{{'s' if len(presenters) > 1 else ''}}: {{', '.join(presenters)}}</h4>
     <p>All skill levels welcome</p>
   </div>
   <div class="meeting-body">
