@@ -180,7 +180,7 @@
   }
 
   async function loadArchive() {
-    const res = await fetch('archive.json');
+    const res = await fetch('/data/archive.json');
     const data = await res.json();
 
     renderArchive(data);

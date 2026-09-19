@@ -76,7 +76,7 @@
 
 <script>
   async function loadProjects() {
-    const res = await fetch('projects.json');
+    const res = await fetch('/data/projects.json');
     const projects = await res.json();
     renderProjects(projects);
 

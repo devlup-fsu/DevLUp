@@ -154,7 +154,7 @@
   let projects = [];
   let current = 0;
 
-  fetch('featured_projects.json')
+  fetch('/data/featured_projects.json')
     .then(r => r.json())
     .then(data => { projects = data; renderProject(); });
 

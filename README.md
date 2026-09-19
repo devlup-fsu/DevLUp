@@ -25,9 +25,9 @@ Thanks!
 If you want to add, edit, or remove items from any of these places, you can simply modify the
 corresponding JSON file:
 
-- Projects: `/projects/projects.json`
-- Archive: `/archive/archive.json`
-- Board: `/board/board.json`
+- Projects: `/data/projects.json`
+- Archive: `/data/archive.json`
+- Board: `/data/board.json`
 
 
 ## Editing Page Content

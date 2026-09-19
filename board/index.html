@@ -79,7 +79,7 @@
 
 <script>
   async function loadBoard() {
-    const res = await fetch('board.json');
+    const res = await fetch('/data/board.json');
     const data = await res.json();
 
     renderAdvisor(data.advisor);
