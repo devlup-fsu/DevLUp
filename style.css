@@ -404,6 +404,7 @@
   gap: 10px;
   padding: 9px 14px;
   border-bottom: 0.5px solid var(--border);
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   color: var(--text);
@@ -416,7 +417,8 @@
 }
 
 .quick-link:hover {
-  background: var(--bg2);
+  background: var(--gold-light);
+  text-decoration: underline;
 }
 
 .quick-link-icon {
