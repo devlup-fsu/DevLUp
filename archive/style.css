@@ -117,8 +117,8 @@
 
 /* ===== Archive Card ===== */
 .archive-card {
-  background: var(--gold-light);
-  border: 0.5px solid var(--gold);
+  background: #faf2dd;
+  border: 2px solid var(--garnet);
   border-radius: 10px;
   padding: 1rem 1.25rem;
   display: flex;
