@@ -34,7 +34,7 @@
 }
 
 .board-main {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem;
 }
@@ -80,9 +80,9 @@
 }
 
 .board-advisor-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  color: var(--garnet);
+  color: var(--text);
   border-bottom: 2px solid var(--gold);
   padding-bottom: 8px;
   margin-bottom: 1.25rem;
@@ -163,7 +163,7 @@
 }
 
 .board-year-header h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--text);
 }
