@@ -3,7 +3,7 @@
     "title": "Orbital Odyssey",
     "description": "A four player space themed party game.",
     "tags": ["Godot", "GDScript"],
-    "image": "../assets/images/projects/TempOrbitalOdysseyImage-gif.gif",
+    "image": "/assets/images/projects/TempOrbitalOdysseyImage-gif.gif",
     "playUrl": "https://github.com/devlup-fsu/party-game",
     "repoUrl": "https://github.com/devlup-fsu/party-game"
   },
@@ -11,7 +11,7 @@
     "title": "Radio Six",
     "description": "A single player horror game.",
     "tags": ["Unity", "C#"],
-    "image": "../assets/images/projects/RadioSix.png",
+    "image": "/assets/images/projects/RadioSix.png",
     "playUrl": "https://agregory-vhs.itch.io/radio-six",
     "repoUrl": "https://github.com/MitchyTh/RadioSix"
   },
@@ -19,7 +19,7 @@
     "title": "Spider Sol",
     "description": "A single player mouse game played as a spider. Don't touch the light!",
     "tags": ["Unity", "C#"],
-    "image": "../assets/images/projects/AfterEffectsIntroScreen.gif.gif",
+    "image": "/assets/images/projects/AfterEffectsIntroScreen.gif.gif",
     "playUrl": "https://jdevo.itch.io/spidersol",
     "repoUrl": "https://github.com/jdevo22/HalloweenGameJam2025"
   },
@@ -27,7 +27,7 @@
     "title": "Toasty Time",
     "description": "Toast marshmallows before nightfall.",
     "tags": ["Godot", "GDScript"],
-    "image": "../assets/images/projects/ToastyTimeImage.png",
+    "image": "/assets/images/projects/ToastyTimeImage.png",
     "playUrl": "https://trikzon.itch.io/toasty-time",
     "repoUrl": "https://github.com/Trikzon/toasty-time"
   },
@@ -35,7 +35,7 @@
     "title": "Party Pirates",
     "description": "DevLUp 2023-2024 Game.",
     "tags": ["Godot", "GDScript"],
-    "image": "../assets/images/projects/PartyPiratesLogo.png",
+    "image": "/assets/images/projects/PartyPiratesLogo.png",
     "playUrl": "https://github.com/devlup-fsu/party-pirates",
     "repoUrl": "https://github.com/devlup-fsu/party-pirates"
   },
@@ -43,7 +43,7 @@
     "title": "Dawn of Dion and the Lost Sprites",
     "description": "A magical 3D platforming adventure spanning multiple diverse levels.",
     "tags": ["Unity", "C#"],
-    "image": "../assets/images/projects/Dawn of.png",
+    "image": "/assets/images/projects/Dawn of.png",
     "playUrl": "https://jake0822.itch.io/dawn-of-dion",
     "repoUrl": "https://github.com/jake0822/DevLUp-Project-2025-2026"
   },
@@ -51,7 +51,7 @@
     "title": "Dr. Stacy and Dr. Rex and their Interdimensional Adventures",
     "description": "Two dinos go interdimensional to avoid extinction.",
     "tags": ["Unity", "C#"],
-    "image": "../assets/images/projects/Dr.StacyGame.png",
+    "image": "/assets/images/projects/Dr.StacyGame.png",
     "playUrl": "https://jdevo.itch.io/drstacydrrex",
     "repoUrl": "https://github.com/Jackson-IHub/AventGarde"
   },
@@ -59,7 +59,7 @@
     "title": "OrcAttack",
     "description": "Be an Orca and protect fish eggs from sharks.",
     "tags": ["Godot", "GDScript"],
-    "image": "../assets/images/projects/OrcAttack.png",
+    "image": "/assets/images/projects/OrcAttack.png",
     "playUrl": "https://itch.io/jam/devlup-wargames-fall-24/rate/3084781",
     "repoUrl": "https://github.com/Trikzon/orcattack"
   },
@@ -67,175 +67,175 @@
     "title": "Gasp",
     "description": "Your plane crashed! Put your diving helmet on and get to the lighthouse! Beware, you are not alone.",
     "tags": [],
-    "image": "../assets/images/projects/GaspScreenshot.jpg",
+    "image": "/assets/images/projects/GaspScreenshot.jpg",
     "playUrl": "https://brownbookcover.itch.io/last-gasp"
   },
   {
     "title": "Thalassophobic Sunrise",
     "description": "Don't get eaten by the Creature of the Depths!",
     "tags": [],
-    "image": "../assets/images/projects/ThalassophobicImage.png",
+    "image": "/assets/images/projects/ThalassophobicImage.png",
     "playUrl": "https://rubyofthelethe.itch.io/thalassophobic-sunrise"
   },
   {
     "title": "T3NDER; or, ONE MORE BALLAD BEFORE YOU LAY ME DOWN",
     "description": "A short rhythm game of unfolding tension.",
     "tags": [],
-    "image": "../assets/images/projects/T3NDERphoto.png",
+    "image": "/assets/images/projects/T3NDERphoto.png",
     "playUrl": "https://maybewhalen.itch.io/t3nder-or-one-more-ballad-before-you-lay-me-down"
   },
   {
     "title": "Frostlit",
     "description": "A short horror experience in a frozen and isolated environment.",
     "tags": [],
-    "image": "../assets/images/projects/Froslit.png",
+    "image": "/assets/images/projects/Froslit.png",
     "playUrl": "https://7limes.itch.io/frostlit"
   },
   {
     "title": "Toss",
     "description": "Beware the light you let in, and the darkness you let out.",
     "tags": [],
-    "image": "../assets/images/projects/tossImage.png",
+    "image": "/assets/images/projects/tossImage.png",
     "playUrl": "https://marshulets.itch.io/toss"
   },
   {
     "title": "THE RAPTURE DOES NOT COME FOR THE GLORIOUS, BUT FOR THOSE WHO DO THEIR BEST WORK IN THE NEXT WORLD.",
     "description": "i been down too long…",
     "tags": [],
-    "image": "../assets/images/projects/TheRaptureImage.png",
+    "image": "/assets/images/projects/TheRaptureImage.png",
     "playUrl": "https://marshulets.itch.io/trdncftg-bftwdtbwitnw"
   },
   {
     "title": "I AM IN CONTROL",
     "description": "Are you in control of your emotions?",
     "tags": [],
-    "image": "../assets/images/projects/IAMInControlImage.png",
+    "image": "/assets/images/projects/IAMInControlImage.png",
     "playUrl": "https://marshulets.itch.io/i-am-in-control"
   },
   {
     "title": "The Virtual Virtues",
     "description": "Test your mouse mettle in a series of mini-challenges.",
     "tags": [],
-    "image": "../assets/images/projects/VirtualVirtuesImage.png",
+    "image": "/assets/images/projects/VirtualVirtuesImage.png",
     "playUrl": "https://maybewhalen.itch.io/the-virtual-virtues"
   },
   {
     "title": "Kime Loop Scavenger",
     "description": "Guide us to the end of kimes.",
     "tags": [],
-    "image": "../assets/images/projects/KimeLoopImage.png",
+    "image": "/assets/images/projects/KimeLoopImage.png",
     "playUrl": "https://maybewhalen.itch.io/kime-loop-scavenger"
   },
   {
     "title": "Fortified Fists",
     "description": "A browser game made in HTML5.",
     "tags": ["HTML5"],
-    "image": "../assets/images/projects/FortifiedFistsImage.png",
+    "image": "/assets/images/projects/FortifiedFistsImage.png",
     "playUrl": "https://caninblue.itch.io/fortified-fists"
   },
   {
     "title": "TOUR",
     "description": "There's always a vacancy.",
     "tags": [],
-    "image": "../assets/images/projects/TourImage.png",
+    "image": "/assets/images/projects/TourImage.png",
     "playUrl": "https://marshulets.itch.io/tour"
   },
   {
     "title": "Kime Loop Traveler",
     "description": "One room. One minute. All directions pointing down.",
     "tags": [],
-    "image": "../assets/images/projects/KimeLoopTravelerImage.png",
+    "image": "/assets/images/projects/KimeLoopTravelerImage.png",
     "playUrl": "https://maybewhalen.itch.io/kime-loop-traveler"
   },
   {
     "title": "Masteroids",
     "description": "An Asteroids-style roguelike where you can only take one hit.",
     "tags": [],
-    "image": "../assets/images/projects/MasteroidsImage.png",
+    "image": "/assets/images/projects/MasteroidsImage.png",
     "playUrl": "https://7limes.itch.io/masteroids"
   },
   {
     "title": "FCIM Game V 0.5",
     "description": "A browser game made in HTML5.",
     "tags": ["HTML5"],
-    "image": "../assets/images/projects/FCIMImage.png",
+    "image": "/assets/images/projects/FCIMImage.png",
     "playUrl": "https://jake0822.itch.io/fcim-game-v-005"
   },
   {
     "title": "Waiting for Jack",
     "description": "Late at night on Greenwich Avenue, the bus driver needs a little help getting everyone where they're going. Help a man move on to the next life by saying goodbye to his dog.",
     "tags": [],
-    "image": "../assets/images/projects/WaitingImage.png",
+    "image": "/assets/images/projects/WaitingImage.png",
     "playUrl": "https://brownbookcover.itch.io/waiting-for-jack"
   },
   {
     "title": "DOOMed Tales",
     "description": "BASICALLY FAIRYTALE DOOM.",
     "tags": [],
-    "image": "../assets/images/projects/DOOMedTalesImage.png",
+    "image": "/assets/images/projects/DOOMedTalesImage.png",
     "playUrl": "https://alectrem.itch.io/doomed-tales"
   },
   {
     "title": "Squirreling Away",
     "description": "Play as an escaped pet hamster stealing from their captors to start a revolution! Huzzah!",
     "tags": [],
-    "image": "../assets/images/projects/SquirrelingAwayImage.png",
+    "image": "/assets/images/projects/SquirrelingAwayImage.png",
     "playUrl": "https://alectrem.itch.io/squirreling-away"
   },
   {
     "title": "Upside-Down Pineapple Race!",
     "description": "This dino is craving some pineapple-upside down cake, but only has 60 seconds! Can you help him?",
     "tags": [],
-    "image": "../assets/images/projects/Upside-DownImage.png",
+    "image": "/assets/images/projects/Upside-DownImage.png",
     "playUrl": "https://amused.itch.io/upside-down-pineapple-race"
   },
   {
     "title": "Dimensional Duality",
     "description": "Puzzle, upside down, custom sounds and music, custom art, game jam.",
     "tags": [],
-    "image": "../assets/images/projects/DimensionalImage.png",
+    "image": "/assets/images/projects/DimensionalImage.png",
     "playUrl": "https://rromero123102.itch.io/dimensional-duality"
   },
   {
     "title": "Trinketeer",
     "description": "Play as the rad raccoon and hide your shiny trinkets! Share your coordinates and let others find them.",
     "tags": [],
-    "image": "../assets/images/projects/TrinketeerImage.png",
+    "image": "/assets/images/projects/TrinketeerImage.png",
     "playUrl": "https://shroonkle.itch.io/trinketeer"
   },
   {
     "title": "Unliving in the Moment",
     "description": "You're a ghost who can only be a ghost at moments in time.",
     "tags": [],
-    "image": "../assets/images/projects/UnlivingImage.png",
+    "image": "/assets/images/projects/UnlivingImage.png",
     "playUrl": "https://darthm1.itch.io/unliving-in-the-moment"
   },
   {
     "title": "The Depths",
     "description": "How deep can you dive? Keep your flashlight and O2 tank working as you make your way to the bottom of The Depths.",
     "tags": [],
-    "image": "../assets/images/projects/DepthsImage.png",
+    "image": "/assets/images/projects/DepthsImage.png",
     "playUrl": "https://nickratzlaff.itch.io/the-depths"
   },
   {
     "title": "water deez plants",
     "description": "You are a witch wielding a water rifle that must prevent fire spirits from destroying your flower.",
     "tags": [],
-    "image": "../assets/images/projects/WaterdeezImage.png",
+    "image": "/assets/images/projects/WaterdeezImage.png",
     "playUrl": "https://jophasl.itch.io/water-deez-plants"
   },
   {
     "title": "Water Drop",
     "description": "Water Drop is a game where you are a water droplet falling through the sky. Try to avoid the leaves for as long as possible.",
     "tags": [],
-    "image": "../assets/images/projects/WaterDropImage.png",
+    "image": "/assets/images/projects/WaterDropImage.png",
     "playUrl": "https://skyvelo.itch.io/water-drop"
   },
   {
     "title": "Who Killed Thelonious",
     "description": "A murder mystery where you find evidence to prove dinner guests' alibi and accuse the killer.",
     "tags": [],
-    "image": "../assets/images/projects/WhoKilledImage.png",
+    "image": "/assets/images/projects/WhoKilledImage.png",
     "playUrl": "https://alectrem.itch.io/who-killed-thelonious"
   }
 ]

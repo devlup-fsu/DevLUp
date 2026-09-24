@@ -2,7 +2,7 @@
   "advisor": {
     "name": "Jackson Anderson",
     "role": "Advisor",
-    "image": "../assets/images/board/JacksonAndersonImage.jpg",
+    "image": "/assets/images/board/JacksonAndersonImage.jpg",
     "url": "https://www.linkedin.com/in/jackson-p-anderson/"
   },
   "years": [
@@ -10,66 +10,66 @@
       "year": "2026 - 2027",
       "current": true,
       "members": [
-        { "name": "Hailie Tucker",     "role": "President",           "image": "../assets/images/board/HailieTuckerImage.jpg",          "url": "https://hailietucker.com/" },
-        { "name": "Yusong Liang",      "role": "Vice President",      "image": "../assets/images/board/YusongLiangImage.jpg",           "url": "https://www.linkedin.com/in/yusong-liang/" },
-        { "name": "Ashiyah Meide",     "role": "Secretary",           "image": "../assets/images/board/Ashiyah_Meide_image.jpg",        "url": "https://www.linkedin.com/in/ashiyah-meide-b08747307/" },
-        { "name": "Sean McGill",       "role": "Treasurer",           "image": "../assets/images/board/Sean_McGill_Image.jpg",          "url": "https://www.linkedin.com/in/sean-mcgill-010172298/" },
-        { "name": "Laura Diez",        "role": "Social Chair",        "image": "../assets/images/board/Laura_Diez_Image.png",           "url": "https://www.linkedin.com/in/laura-diez-8135903a7/" },
-        { "name": "Marco Castaño",     "role": "Marketing Chair",     "image": "../assets/images/board/Marco_image.jpg",                "url": "https://www.linkedin.com/in/marco-casta%C3%B1o-165087406/" },
-        { "name": "Kaydence Montenegro","role": "Creative Chair",     "image": "../assets/images/board/Kaydence_Montenegro_Image.png",  "url": "https://www.linkedin.com/in/kaydence-montenegro-a8852a376/" },
-        { "name": "Miles Burkart",     "role": "Webmaster",           "image": "../assets/images/board/Miles_Burkart_Image.jpg",        "url": "https://7limes.github.io/" },
-        { "name": "Ares Gregory",      "role": "Project Facilitator", "image": "../assets/images/board/AresGregoryImage.jpg",           "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" },
-        { "name": "Mitchell Thai",     "role": "Event Coordinator",   "image": "../assets/images/board/Mitchell_thai_image.jpg",        "url": "https://www.linkedin.com/in/mitchell-thai-218512345/" }
+        { "name": "Hailie Tucker",     "role": "President",           "image": "/assets/images/board/HailieTuckerImage.jpg",          "url": "https://hailietucker.com/" },
+        { "name": "Yusong Liang",      "role": "Vice President",      "image": "/assets/images/board/YusongLiangImage.jpg",           "url": "https://www.linkedin.com/in/yusong-liang/" },
+        { "name": "Ashiyah Meide",     "role": "Secretary",           "image": "/assets/images/board/Ashiyah_Meide_image.jpg",        "url": "https://www.linkedin.com/in/ashiyah-meide-b08747307/" },
+        { "name": "Sean McGill",       "role": "Treasurer",           "image": "/assets/images/board/Sean_McGill_Image.jpg",          "url": "https://www.linkedin.com/in/sean-mcgill-010172298/" },
+        { "name": "Laura Diez",        "role": "Social Chair",        "image": "/assets/images/board/Laura_Diez_Image.png",           "url": "https://www.linkedin.com/in/laura-diez-8135903a7/" },
+        { "name": "Marco Castaño",     "role": "Marketing Chair",     "image": "/assets/images/board/Marco_image.jpg",                "url": "https://www.linkedin.com/in/marco-casta%C3%B1o-165087406/" },
+        { "name": "Kaydence Montenegro","role": "Creative Chair",     "image": "/assets/images/board/Kaydence_Montenegro_Image.png",  "url": "https://www.linkedin.com/in/kaydence-montenegro-a8852a376/" },
+        { "name": "Miles Burkart",     "role": "Webmaster",           "image": "/assets/images/board/Miles_Burkart_Image.jpg",        "url": "https://7limes.github.io/" },
+        { "name": "Ares Gregory",      "role": "Project Facilitator", "image": "/assets/images/board/AresGregoryImage.jpg",           "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" },
+        { "name": "Mitchell Thai",     "role": "Event Coordinator",   "image": "/assets/images/board/Mitchell_thai_image.jpg",        "url": "https://www.linkedin.com/in/mitchell-thai-218512345/" }
       ]
     },
     {
       "year": "2025 - 2026",
       "current": false,
       "members": [
-        { "name": "Jake Younan",    "role": "President",      "image": "../assets/images/board/JakeYounanImage.jpg",  "url": "https://www.linkedin.com/in/jacob-younan-a5b649270/" },
-        { "name": "Calvin Whalen", "role": "Vice President",  "image": "../assets/images/board/CalvinImage.jpg",      "url": "https://maybewhalen.itch.io/" },
-        { "name": "Domnul Marsh",  "role": "Secretary",       "image": "../assets/images/board/MarshImage.jpg",       "url": "https://marshulets.itch.io/" },
-        { "name": "David Berger",  "role": "Treasurer",       "image": "../assets/images/board/DavidBergerImage.jpg", "url": "https://www.linkedin.com/in/davidberger42/" },
-        { "name": "Hailie Tucker", "role": "Social Chair",    "image": "../assets/images/board/HailieTuckerImage.jpg","url": "https://hailietucker.com/" },
-        { "name": "Yusong Liang",  "role": "Marketing Chair", "image": "../assets/images/board/YusongLiangImage.jpg", "url": "https://www.linkedin.com/in/yusong-liang/" },
-        { "name": "Ares Gregory",  "role": "Creative Chair",  "image": "../assets/images/board/AresGregoryImage.jpg", "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" }
+        { "name": "Jake Younan",    "role": "President",      "image": "/assets/images/board/JakeYounanImage.jpg",  "url": "https://www.linkedin.com/in/jacob-younan-a5b649270/" },
+        { "name": "Calvin Whalen", "role": "Vice President",  "image": "/assets/images/board/CalvinImage.jpg",      "url": "https://maybewhalen.itch.io/" },
+        { "name": "Domnul Marsh",  "role": "Secretary",       "image": "/assets/images/board/MarshImage.jpg",       "url": "https://marshulets.itch.io/" },
+        { "name": "David Berger",  "role": "Treasurer",       "image": "/assets/images/board/DavidBergerImage.jpg", "url": "https://www.linkedin.com/in/davidberger42/" },
+        { "name": "Hailie Tucker", "role": "Social Chair",    "image": "/assets/images/board/HailieTuckerImage.jpg","url": "https://hailietucker.com/" },
+        { "name": "Yusong Liang",  "role": "Marketing Chair", "image": "/assets/images/board/YusongLiangImage.jpg", "url": "https://www.linkedin.com/in/yusong-liang/" },
+        { "name": "Ares Gregory",  "role": "Creative Chair",  "image": "/assets/images/board/AresGregoryImage.jpg", "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" }
       ]
     },
     {
       "year": "2024 - 2025",
       "current": false,
       "members": [
-        { "name": "Dion Tryban",      "role": "President",       "image": "../assets/images/board/DionTrybanImage.jpg",    "url": "https://www.linkedin.com/in/tryban/" },
-        { "name": "Jake Younan",      "role": "Vice President",  "image": "../assets/images/board/JakeYounanImage.jpg",    "url": "https://www.linkedin.com/in/jacob-younan-a5b649270/" },
-        { "name": "Calvin Whalen",    "role": "Secretary",       "image": "../assets/images/board/CalvinImage.jpg",        "url": null },
-        { "name": "Chris Swezy",      "role": "Secretary",       "image": "../assets/images/board/ChrisSwezyImage.jpg",    "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" },
-        { "name": "Emma Berry",       "role": "Treasurer",       "image": "../assets/images/board/EmmaBerryImage.jpg",     "url": "https://www.linkedin.com/in/emmaberry275/" },
-        { "name": "Parker Dennison",  "role": "Promoting Chair", "image": "../assets/images/board/ParkerDennisonImage.jpg","url": "https://www.linkedin.com/in/parker-dennison-5660a6338/" },
-        { "name": "Jordan Freyman",   "role": "Marketing Chair", "image": "../assets/images/board/JordanFreymanImage.jpg", "url": null },
-        { "name": "Ares Gregory",     "role": "Creative Chair",  "image": "../assets/images/board/AresGregoryImage.jpg",   "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" }
+        { "name": "Dion Tryban",      "role": "President",       "image": "/assets/images/board/DionTrybanImage.jpg",    "url": "https://www.linkedin.com/in/tryban/" },
+        { "name": "Jake Younan",      "role": "Vice President",  "image": "/assets/images/board/JakeYounanImage.jpg",    "url": "https://www.linkedin.com/in/jacob-younan-a5b649270/" },
+        { "name": "Calvin Whalen",    "role": "Secretary",       "image": "/assets/images/board/CalvinImage.jpg",        "url": null },
+        { "name": "Chris Swezy",      "role": "Secretary",       "image": "/assets/images/board/ChrisSwezyImage.jpg",    "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" },
+        { "name": "Emma Berry",       "role": "Treasurer",       "image": "/assets/images/board/EmmaBerryImage.jpg",     "url": "https://www.linkedin.com/in/emmaberry275/" },
+        { "name": "Parker Dennison",  "role": "Promoting Chair", "image": "/assets/images/board/ParkerDennisonImage.jpg","url": "https://www.linkedin.com/in/parker-dennison-5660a6338/" },
+        { "name": "Jordan Freyman",   "role": "Marketing Chair", "image": "/assets/images/board/JordanFreymanImage.jpg", "url": null },
+        { "name": "Ares Gregory",     "role": "Creative Chair",  "image": "/assets/images/board/AresGregoryImage.jpg",   "url": "https://www.linkedin.com/in/ares-gregory-a464aa320/" }
       ]
     },
     {
       "year": "2023 - 2024",
       "current": false,
       "members": [
-        { "name": "Alec Tremblay",    "role": "President",       "image": "../assets/images/board/AlecTremblayImage.jpg",    "url": "https://www.linkedin.com/in/alectremblay/" },
-        { "name": "Dion Tryban",      "role": "Vice President",  "image": "../assets/images/board/DionTrybanImage.jpg",      "url": "https://www.linkedin.com/in/tryban/" },
-        { "name": "Michael Ridgeway", "role": "Secretary",       "image": "../assets/images/board/MichaelRidgewayImage.jpg", "url": "https://www.linkedin.com/in/michael-ridgeway-164840271/" },
-        { "name": "Skylar Scorca",    "role": "Treasurer",       "image": "../assets/images/board/SkylarScorcaImage.jpg",    "url": "https://www.linkedin.com/in/skylarscorca/" },
-        { "name": "Chris Swezy",      "role": "Promoting Chair", "image": "../assets/images/board/ChrisSwezyImage.jpg",      "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" }
+        { "name": "Alec Tremblay",    "role": "President",       "image": "/assets/images/board/AlecTremblayImage.jpg",    "url": "https://www.linkedin.com/in/alectremblay/" },
+        { "name": "Dion Tryban",      "role": "Vice President",  "image": "/assets/images/board/DionTrybanImage.jpg",      "url": "https://www.linkedin.com/in/tryban/" },
+        { "name": "Michael Ridgeway", "role": "Secretary",       "image": "/assets/images/board/MichaelRidgewayImage.jpg", "url": "https://www.linkedin.com/in/michael-ridgeway-164840271/" },
+        { "name": "Skylar Scorca",    "role": "Treasurer",       "image": "/assets/images/board/SkylarScorcaImage.jpg",    "url": "https://www.linkedin.com/in/skylarscorca/" },
+        { "name": "Chris Swezy",      "role": "Promoting Chair", "image": "/assets/images/board/ChrisSwezyImage.jpg",      "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" }
       ]
     },
     {
       "year": "2022 - 2023",
       "current": false,
       "members": [
-        { "name": "Skylar Scorca",    "role": "President",       "image": "../assets/images/board/SkylarScorcaImage.jpg",  "url": "https://www.linkedin.com/in/skylarscorca/" },
-        { "name": "Scott Harrison",   "role": "Vice President",  "image": "../assets/images/board/UnknownPersonImage.jpg", "url": null },
-        { "name": "Jamie Chen",       "role": "Secretary",       "image": "../assets/images/board/UnknownPersonImage.jpg", "url": null },
-        { "name": "Sabrina Polynice", "role": "Treasurer",       "image": "../assets/images/board/UnknownPersonImage.jpg", "url": null },
-        { "name": "Chris Swezy",      "role": "Promoting Chair", "image": "../assets/images/board/ChrisSwezyImage.jpg",    "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" },
-        { "name": "Daniela Ramirez",  "role": "Social Chair",    "image": "../assets/images/board/UnknownPersonImage.jpg", "url": null }
+        { "name": "Skylar Scorca",    "role": "President",       "image": "/assets/images/board/SkylarScorcaImage.jpg",  "url": "https://www.linkedin.com/in/skylarscorca/" },
+        { "name": "Scott Harrison",   "role": "Vice President",  "image": "/assets/images/board/UnknownPersonImage.jpg", "url": null },
+        { "name": "Jamie Chen",       "role": "Secretary",       "image": "/assets/images/board/UnknownPersonImage.jpg", "url": null },
+        { "name": "Sabrina Polynice", "role": "Treasurer",       "image": "/assets/images/board/UnknownPersonImage.jpg", "url": null },
+        { "name": "Chris Swezy",      "role": "Promoting Chair", "image": "/assets/images/board/ChrisSwezyImage.jpg",    "url": "https://www.linkedin.com/in/chris-swezy-50056730b/" },
+        { "name": "Daniela Ramirez",  "role": "Social Chair",    "image": "/assets/images/board/UnknownPersonImage.jpg", "url": null }
       ]
     }
   ]
