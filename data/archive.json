@@ -8,6 +8,12 @@
         "description": "Introduction to the club, board members, and plans for the semester.",
         "date": "September 17th, 2026",
         "file": "../assets/gbm_materials/2026-2027/Fall26_GBM_1.pdf"
+      },
+      {
+        "title": "GBM #2: Intro to Unity",
+        "description": "Introduction to the Unity game engine.",
+        "date": "September 24th, 2026",
+        "file": "../assets/gbm_materials/2026-2027/Fall26_GBM_2.pdf"
       }
     ]
   },
