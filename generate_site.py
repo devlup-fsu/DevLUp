@@ -1,5 +1,5 @@
 """
-Super Simple Static Site Generator v1.3
+Super Simple Static Site Generator v1.4
 
 by Miles Burkart
 """
@@ -18,6 +18,7 @@ TEMPLATE_DIR = '_templates'
 HTML_EXTENSION = '.html'
 
 TEMPLATE_PATTERN = re.compile(r"\{\{(.*?)\}\}", re.DOTALL)
+WHITESPACE_PATTERN = re.compile(r"\s+", re.UNICODE)
 
 COLOR_ERR = '\x1b[31m'
 COLOR_OK = '\x1b[32m'
@@ -39,6 +40,8 @@ def template(template_path: str, use_template_dir=True, **kwargs) -> str:
     Takes in a path to a template file and returns a formatted string
     where all expressions in that template are evaluated.
     """
+
+    kwargs.update(TEMPLATE_FUNCTIONS)  # Make builtin functions available
 
     if use_template_dir:
         template_path = TEMPLATE_DIR + '/' + template_path
@@ -83,16 +86,18 @@ def readjson(file_path: str):
         return json.load(f)
 
 
+TEMPLATE_FUNCTIONS = {
+    'template': template,
+    'listdir': os.listdir,
+    'json': readjson,
+    'rmws': lambda s: re.sub(WHITESPACE_PATTERN, "", s)
+}
+
+
 def main():
     if not os.path.isdir(LAYOUT_DIR):
         print(f'{COLOR_ERR}Error: Could not find layout directory at {LAYOUT_DIR}{COLOR_RESET}', file=sys.stderr)
         return 1
-
-    template_kwargs = {
-        'template': template,
-        'listdir': os.listdir,
-        'json': readjson
-    }
 
     generated_file_count = 0
     start_time = time.time()
@@ -106,7 +111,7 @@ def main():
             file_path = Path(root) / file
 
             try:
-                file_content = template(str(file_path), use_template_dir=False, **template_kwargs)
+                file_content = template(str(file_path), use_template_dir=False, **TEMPLATE_FUNCTIONS)
             except Exception as e:
                 print(f'{COLOR_ERR}Error: {e}{COLOR_RESET}', file=sys.stderr)
                 return 2
