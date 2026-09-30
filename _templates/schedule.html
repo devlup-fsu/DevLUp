@@ -1,0 +1,16 @@
+<div class="schedule-container">
+  <div class="section-title">{{title}}</div>
+  <table class="schedule-table">
+    <tbody>
+        {{
+          '\n'.join(
+            f'''
+              <tr{' class="current"' if m.get('current') else ''}>
+                <td>{m['title']}</td>
+                <td>{m['date']}</td>
+              </tr>''' for m in meetings
+          )
+        }}
+      </tbody>
+    </table>
+</div>

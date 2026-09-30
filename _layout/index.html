@@ -75,7 +75,11 @@
         </a>
       </div>
     </div>
+
+    {{ template('schedule', **json('data/schedule.json')) }}
+
   </div>
+
 
   {{ template('footer') }}
 </div>

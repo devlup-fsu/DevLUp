@@ -11,6 +11,7 @@
   --gold: #ceb888;
   --gold-dark: #a89060;
   --gold-light: #e8d8ac;
+  --gold-lighter: #f4ebd4;
   --bg: var(--color-background-primary);
   --bg2: var(--color-background-secondary);
   --text: var(--color-text-primary);
@@ -504,6 +505,30 @@
     max-height: 300px;
     padding-bottom: 0.5rem;
   }
+}
+
+.schedule-table {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.schedule-table td {
+  padding: 5px 5px;
+}
+
+.schedule-table tr.current {
+  font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: var(--gold-lighter);
+}
+
+/* Right align dates1 */
+.schedule-table td:nth-child(2) {
+  text-align: right;
 }
 
 .site-footer {

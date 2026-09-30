@@ -1,0 +1,50 @@
+{
+    "title": "Fall 2026 Schedule",
+    "meetings": [
+        {
+            "title": "First Meeting",
+            "date": "September 17th, 2026"
+        },
+        {
+            "title": "Intro to Unity",
+            "date": "September 24th, 2026"
+        },
+        {
+            "title": "Roblox Development",
+            "date": "October 1st, 2026",
+            "current": true
+        },
+        {
+            "title": "Gameplay and Level Design",
+            "date": "October 8th, 2026"
+        },
+        {
+            "title": "Modeling in Blender",
+            "date": "October 15th, 2026"
+        },
+        {
+            "title": "Pixel Art",
+            "date": "October 22nd, 2026"
+        },
+        {
+            "title": "Materials in Blender",
+            "date": "October 29th, 2026"
+        },
+        {
+            "title": "Voice Acting in Games",
+            "date": "November 5th, 2026"
+        },
+        {
+            "title": "Music in Games",
+            "date": "November 12th, 2026"
+        },
+        {
+            "title": "Game Programming: What You Should Know",
+            "date": "November 19th, 2026"
+        },
+        {
+            "title": "End of Semester Celebration",
+            "date": "December 3rd, 2026"
+        }
+    ]
+}
