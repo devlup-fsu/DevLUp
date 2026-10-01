@@ -6,7 +6,9 @@
   </div>
   <div class="meeting-body">
     <div class="meeting-row">
-      <div class="meeting-icon">📅</div>
+      <div class="meeting-icon">
+        {{ template('icons/calendar') }}
+      </div>
       <div>
         <div class="meeting-label">Date</div>
         <div class="meeting-value">{{date}}</div>
@@ -14,7 +16,9 @@
       </div>
     </div>
     <div class="meeting-row">
-      <div class="meeting-icon">🕖</div>
+      <div class="meeting-icon">
+        {{ template('icons/clock') }}
+      </div>
       <div>
         <div class="meeting-label">Time</div>
         <div class="meeting-value">4:30 PM - 6:00 PM</div>
@@ -22,7 +26,9 @@
       </div>
     </div>
     <div class="meeting-row">
-      <div class="meeting-icon">📍</div>
+      <div class="meeting-icon">
+        {{ template('icons/location') }}
+      </div>
       <div>
         <div class="meeting-label">Location</div>
         <a class="meeting-value" href="{{location_link}}">{{location}}</a>
