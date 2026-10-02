@@ -14,6 +14,12 @@
         "description": "Introduction to the Unity game engine.",
         "date": "September 24th, 2026",
         "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_2.pdf"
+      },
+      {
+        "title": "GBM #3: Roblox Development",
+        "description": "An overview of how to make a Roblox game.",
+        "date": "October 1st, 2026",
+        "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_3.pdf"
       }
     ]
   },
