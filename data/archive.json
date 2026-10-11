@@ -20,6 +20,12 @@
         "description": "An overview of how to make a Roblox game.",
         "date": "October 1st, 2026",
         "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_3.pdf"
+      },
+      {
+        "title": "GBM #4: Gameplay and Level Design",
+        "description": "Learn about the design aspect of game development.",
+        "date": "October 8th, 2026",
+        "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_4.pdf"
       }
     ]
   },
