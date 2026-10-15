@@ -1,5 +1,15 @@
 [
   {
+    "tag": "Game Jam",
+    "title": "DevLUp Fall Game Jam '26",
+    "desc": "A 48 hour intercollegiate game jam for Florida schools. Starts at 6:30 PM on November 13th!",
+    "authors": ["DevLUp FSU"],
+    "year": "2026",
+    "bg": "linear-gradient(135deg, #A61A2D 0%, #A61A2D 100%)",
+    "art_link": "/assets/images/jams/fall26_jam_poster.webp",
+    "link": "https://devlup-fsu.itch.io/"
+  },
+  {
     "tag": "3D Platformer",
     "title": "Dawn of Dion and the Lost Sprites",
     "desc": "A magical 3D platforming adventure spanning multiple diverse levels.",
