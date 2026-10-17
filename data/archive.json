@@ -26,6 +26,12 @@
         "description": "Learn about the design aspect of game development.",
         "date": "October 8th, 2026",
         "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_4.pdf"
+      },
+      {
+        "title": "GBM #5: Modeling in Blender",
+        "description": "Learn how to make 3D models using Blender.",
+        "date": "October 15th, 2026",
+        "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_5.pdf"
       }
     ]
   },
