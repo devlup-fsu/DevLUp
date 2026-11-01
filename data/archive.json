@@ -38,6 +38,12 @@
         "description": "Learn how to create pixel art.",
         "date": "October 22nd, 2026",
         "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_6.pdf"
+      },
+      {
+        "title": "GBM #7: Materials in Blender",
+        "description": "Learn how to create materials using Blender.",
+        "date": "October 29th, 2026",
+        "file": "/assets/gbm_materials/2026-2027/Fall26_GBM_7.pdf"
       }
     ]
   },
