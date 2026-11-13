@@ -54,9 +54,9 @@
       </div>
     </div>
 
-    <div class="sidebar">
-      <div class="section-title" style="margin-bottom: 10px;">Next meeting</div>
-      
+    <div class="sidebar">      
+      {{ template('jam_card', **json('data/jam.json')) if json('data/jam.json')['active'] else ''}}
+
       {{ template('meeting_card', **json('data/next_meeting.json')) }}
 
       <div class="links-card">

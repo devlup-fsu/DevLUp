@@ -76,13 +76,69 @@
       </div>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar">      
+      <div class="section-title" style="margin-bottom: 10px;">Ongoing Jam</div>
+<div id="div_jamCard" class="jam-card">
+  <h3 class="jam-title">
+    <a href="https://itch.io/jam/devlup-fall-game-jam-26" style="color: white;">DevLUp Fall Game Jam '26</a>
+  </h3>
+  <h4 id="h4_labelForTimer">Remaining Time:</h4>
+  <label class="jam-countdown-timer" id="l_jamTimer">0:00:00</label>
+</div>
+
+<script>
+  let START_TIMESTAMP = 0;
+  let END_TIMESTAMP = 0;
+
+  // Grab timestamps from jam.json
+  fetch("/data/jam.json")
+  .then(r => r.json()
+  .then(json => {
+    START_TIMESTAMP = json.start_timestamp;
+    END_TIMESTAMP = json.end_timestamp;
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  }));
+
+  function formatTime(totalSeconds) {
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = Math.floor(totalSeconds % 60);
+    const pad = n => String(n).padStart(2, "0");
+    return `${h}:${pad(m)}:${pad(s)}`;
+  }
+
+  function updateTimer() {
+    const timeSeconds = Math.floor(Date.now() / 1000);
+
+    let displayTime = 0;
+    if (timeSeconds < START_TIMESTAMP) {
+      // Hasn't started yet
+      h4_labelForTimer.innerText = "Time Until Start:";
+      displayTime = START_TIMESTAMP - timeSeconds;
+      div_jamCard.classList.remove("active");
+    }
+    else if (timeSeconds < END_TIMESTAMP) {
+      // Ongoing
+      h4_labelForTimer.innerText = "Remaining Time:"
+      displayTime = END_TIMESTAMP - timeSeconds;
+      div_jamCard.classList.add("active");
+    }
+    else {
+      // Jam is over
+      displayTime = 0;
+    }
+
+    l_jamTimer.innerText = formatTime(displayTime);
+
+  }
+</script>
+
       <div class="section-title" style="margin-bottom: 10px;">Next meeting</div>
-      
-      <div class="meeting-card">
+<div class="meeting-card">
   <div class="meeting-header">
-    <h3>Music in Games</h3>
-    <h4>Presenter: Marco Castaño</h4>
+    <h3>Game Programming: What You Should Know</h3>
+    <h4>Presenter: Miles Burkart</h4>
     <p>All skill levels welcome</p>
   </div>
   <div class="meeting-body">
@@ -92,7 +148,7 @@
       </div>
       <div>
         <div class="meeting-label">Date</div>
-        <div class="meeting-value">Thursday, November 12th</div>
+        <div class="meeting-value">Thursday, November 19th</div>
         <div class="meeting-sub">Repeats every week</div>
       </div>
     </div>
@@ -181,12 +237,12 @@
                 <td>November 5th, 2026</td>
               </tr>
 
-              <tr class="current">
+              <tr>
                 <td>Music in Games</td>
                 <td>November 12th, 2026</td>
               </tr>
 
-              <tr>
+              <tr class="current">
                 <td>Game Programming: What You Should Know</td>
                 <td>November 19th, 2026</td>
               </tr>

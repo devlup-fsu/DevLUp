@@ -1,0 +1,57 @@
+<div class="section-title" style="margin-bottom: 10px;">Ongoing Jam</div>
+<div id="div_jamCard" class="jam-card">
+  <h3 class="jam-title">
+    <a href="{{link}}" style="color: white;">{{title}}</a>
+  </h3>
+  <h4 id="h4_labelForTimer">Remaining Time:</h4>
+  <label class="jam-countdown-timer" id="l_jamTimer">0:00:00</label>
+</div>
+
+<script>
+  let START_TIMESTAMP = 0;
+  let END_TIMESTAMP = 0;
+
+  // Grab timestamps from jam.json
+  fetch("/data/jam.json")
+  .then(r => r.json()
+  .then(json => {
+    START_TIMESTAMP = json.start_timestamp;
+    END_TIMESTAMP = json.end_timestamp;
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  }));
+
+  function formatTime(totalSeconds) {
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = Math.floor(totalSeconds % 60);
+    const pad = n => String(n).padStart(2, "0");
+    return `${h}:${pad(m)}:${pad(s)}`;
+  }
+
+  function updateTimer() {
+    const timeSeconds = Math.floor(Date.now() / 1000);
+
+    let displayTime = 0;
+    if (timeSeconds < START_TIMESTAMP) {
+      // Hasn't started yet
+      h4_labelForTimer.innerText = "Time Until Start:";
+      displayTime = START_TIMESTAMP - timeSeconds;
+      div_jamCard.classList.remove("active");
+    }
+    else if (timeSeconds < END_TIMESTAMP) {
+      // Ongoing
+      h4_labelForTimer.innerText = "Remaining Time:"
+      displayTime = END_TIMESTAMP - timeSeconds;
+      div_jamCard.classList.add("active");
+    }
+    else {
+      // Jam is over
+      displayTime = 0;
+      div_jamCard.classList.add("active");
+    }
+
+    l_jamTimer.innerText = formatTime(displayTime);
+
+  }
+</script>

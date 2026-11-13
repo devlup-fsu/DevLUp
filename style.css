@@ -19,6 +19,10 @@
   --border: var(--color-border-tertiary);
 }
 
+.hidden {
+  display: none !important;
+}
+
 .page {
   font-family: "Sora";
   color: var(--text);
@@ -564,4 +568,43 @@
   width: 22px;
   height: 22px;
   fill: currentColor;
+}
+
+.jam-card {
+  background-color: var(--garnet);
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--gold);
+  margin-bottom: 1rem;
+}
+
+.jam-card h4 {
+  color: white;
+  font-weight: 350;
+}
+
+.jam-card.active {
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from { background-color: var(-garnet); }
+  to { background-color: #e05050; }
+}
+
+/* Remove pulsing for sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  .jam-card { animation: none; }
+}
+
+.jam-title {
+  margin-bottom: 5px;
+}
+
+.jam-countdown-timer {
+  color: white;
+  font-size: 50px;
+}
+
+.jam-join-link {
+  color: white;;
 }
